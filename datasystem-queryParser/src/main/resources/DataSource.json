@@ -1,0 +1,12 @@
+{
+	"contrack_druid_datasource_ds": {
+		"name": "contrack_druid_datasource_ds",
+		"dimension_file": "ContrackDimensionTable.json",
+		"metric_agg_file": "ContrackMetricAggTable.json"
+	},
+	"ymds_druid_datasource": {
+		"name": "ymds_druid_datasource",
+		"dimension_file": "DimensionTable.json",
+		"metric_agg_file": "MetricAggTable.json"
+	}
+}

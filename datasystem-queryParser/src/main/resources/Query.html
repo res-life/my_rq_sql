@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Druid Query</title>
+</head>
+<body>
+
+        <p></p>
+            <form name="settings" id="settings">
+                <fieldset>
+                    <legend>SETTINGS</legend>
+                    <p> <label>TIME: </label> </p>
+                    <p>
+                        <label>Start<input type="datetime" name="start" value=""/></label>
+                        <label>End<input type="datetime" name="end" value=""/></label>
+                        <label for="timezone">Timezone</label>
+                        <select name="timezone" id="timezone">
+                            <option value="0">UTC</option>
+                            <option value="8" selected="selected">Asia/Shanghai</option>
+                            <option value="-5">America/New_York</option>
+                        </select>
+                    </p>
+                    <p><label>PAGINATION: </label></p>
+                    <p>
+                        <label>Size<input type="text" class="num" name="size" value="50"/></label>
+                        <label>Page<input type="text" class="num" name="page" value="0"/></label>
+                    </p>
+                    <p>
+                        <label for="data_source">DataSource</label>
+                        <select name="data_source" id="data_source">
+                            <option value="yeahmobi">YeahMobi</option>
+                            <option value="yeahmobi2">YeahMobi2</option>
+                            <option value="ymds_druid_datasource">YeahMobi_OL</option>
+                        </select>
+                    </p>
+
+                </fieldset>
+            </form>
+
+        <p></p>
+            <form name="category" id="category">
+                <fieldset>
+                    <legend>GROUP</legend>
+                    <p id="offer">Offer Information
+                        <label><input type="checkbox" name="offer[]" value="offer_id" /> Offer</label>
+                        <label><input type="checkbox" name="offer[]" value="aff_id" /> Affiliate</label>
+                        <label><input type="checkbox" name="offer[]" value="aff_manager" /> AM</label>
+                        <label><input type="checkbox" name="offer[]" value="advertiser_id" /> Advertiser</label>
+                        <label><input type="checkbox" name="offer[]" value="advertiser_manager" /> Advertiser</label>
+                        <label><input type="checkbox" name="offer[]" value="rpa" /> Rpa</label>
+                        <label><input type="checkbox" name="offer[]" value="cpa" /> Cpa</label>
+                    </p>
+                    <p id="geo">GEO Targeting
+                        <label><input type="checkbox" name="geo[]" value="country" /> Country</label>
+                        <label><input type="checkbox" name="geo[]" value="state" /> State</label>
+                    </p>
+                    <p id="platform">UA Targeting
+                        <label><input type="checkbox" name="ua[]" value="platform" /> Platform</label>
+                        <label><input type="checkbox" name="ua[]" value="browser" /> Browser</label>
+                        <label><input type="checkbox" name="ua[]" value="device_type" /> Device Type</label>
+                    </p>
+                    <p id="aff_sub">Aff Subs
+                        <label><input type="checkbox" name="aff_sub[]" value="aff_sub1" /> Aff Sub1</label>
+                        <label><input type="checkbox" name="aff_sub[]" value="aff_sub2" /> Aff Sub2</label>
+                        <label><input type="checkbox" name="aff_sub[]" value="aff_sub3" /> Aff Sub3</label>
+                        <label><input type="checkbox" name="aff_sub[]" value="aff_sub4" /> Aff Sub4</label>
+                        <label><input type="checkbox" name="aff_sub[]" value="aff_sub5" /> Aff Sub5</label>
+                        <label><input type="checkbox" name="aff_sub[]" value="aff_sub6" /> Aff Sub6</label>
+                        <label><input type="checkbox" name="aff_sub[]" value="aff_sub7" /> Aff Sub7</label>
+                        <label><input type="checkbox" name="aff_sub[]" value="aff_sub8" /> Aff Sub8</label>
+                    </p>
+                    <p id="adv_sub">Adv Subs
+                        <label><input type="checkbox" name="adv_sub[]" value="adv_sub1" /> Adv Sub1</label>
+                        <label><input type="checkbox" name="adv_sub[]" value="adv_sub2" /> Adv Sub2</label>
+                        <label><input type="checkbox" name="adv_sub[]" value="adv_sub3" /> Adv Sub3</label>
+                        <label><input type="checkbox" name="adv_sub[]" value="adv_sub4" /> Adv Sub4</label>
+                        <label><input type="checkbox" name="adv_sub[]" value="adv_sub5" /> Adv Sub5</label>
+                        <label><input type="checkbox" name="adv_sub[]" value="adv_sub6" /> Adv Sub6</label>
+                        <label><input type="checkbox" name="adv_sub[]" value="adv_sub7" /> Adv Sub7</label>
+                        <label><input type="checkbox" name="adv_sub[]" value="adv_sub8" /> Adv Sub8</label>
+                    </p>
+                </fieldset>
+            </form>
+
+         <p></p>
+            <form name="interval" id="interval">
+                <fieldset>
+                    <legend>INTERVAL</legend>
+                    <p id="interval0">Interval
+                        <label><input type="checkbox" name="interval[]" value="hour" /> Hour</label>
+                        <label><input type="checkbox" name="interval[]" value="day" /> Date</label>
+                        <label><input type="checkbox" name="interval[]" value="week" /> Week</label>
+                        <label><input type="checkbox" name="interval[]" value="month" /> Month</label>
+                        <label><input type="checkbox" name="interval[]" value="year" /> Year</label>
+                    </p>
+
+                </fieldset>
+            </form>
+
+
+        <p></p>
+            <form name="data" id="data">
+                <fieldset>
+                    <legend>DATA</legend>
+                    <p id="agg">Tracking Statistics
+                        <label><input type="checkbox" name="agg[]" value="click" /> Click</label>
+                        <label><input type="checkbox" name="agg[]" value="conversion" /> Conversion</label>
+                        <label><input type="checkbox" name="agg[]" value="cost" /> Cost</label>
+                        <label><input type="checkbox" name="agg[]" value="revenue" /> Revenue</label>
+                    </p>
+                    <p id="postAgg">Data Calculations
+                        <label><input type="checkbox" name="postAgg[]" value="profit" /> Profit</label>
+                        <label><input type="checkbox" name="postAgg[]" value="cr" /> CR</label>
+                        <label><input type="checkbox" name="postAgg[]" value="cpc" /> CPC</label>
+                        <label><input type="checkbox" name="postAgg[]" value="rpc" /> RPC</label>
+                        <label><input type="checkbox" name="postAgg[]" value="acpa" /> aCPA</label>
+                        <label><input type="checkbox" name="postAgg[]" value="arpa" /> aRPA</label>
+                    </p>
+                </fieldset>
+            </form>
+
+        <p></p>
+            <form name="sort" id="sort">
+                <fieldset>
+                    <legend>SORTBY: ASC:1, DESC:-1</legend>
+                    <div id="dynamicSort">
+                        Sort 1:
+                        <label>SortKey <input type="text" name="sortKey[]" value="" /></label>
+                        <label> SortDir <input type="text" name="sortDir[]" class="num" value="" /></label>
+                        <br>
+                        <input type="button" value="Add" onClick="addSortRule('dynamicSort');">
+                    </div>
+
+                </fieldset>
+            </form>
+
+        <script>
+            var counter = 1;
+            var limit = 10;
+            function addSortRule(divName){
+                 if (counter == limit)  {
+                      alert("You have reached the limit of adding " + counter + " filters");
+                 }
+                 else {
+                      var newdiv = document.createElement('div');
+                      newdiv.innerHTML = "Sort " + (counter + 1) + ": "
+                      + '<label>SortKey <input type="text" name="sortKey[]" value="" /></label>'
+                      + '<label> SortDir <input type="text" name="sortDir[]" class="num" value="" /></label>'
+                      document.getElementById(divName).appendChild(newdiv);
+                      counter++;
+                 }
+            }
+        </script>
+
+           <p></p>
+            <form name="filters" id="filters">
+                <fieldset>
+                    <legend>Filters</legend>
+                    <div id="dynamicFilter">
+                        Filter 1:
+                        <label>FilterKey <input type="text" name="filterKey[]" value="" /></label>
+                        <label> FilterOP <input type="text" name="filterOP[]" value="" /></label>
+                        <label> FilterValue <input type="text" name="filterValue[]" value="" /></label>
+                        <br>
+                        <input type="button" value="Add" onClick="addFilter('dynamicFilter');">
+                    </div>
+
+                </fieldset>
+            </form>
+
+        <script>
+            var counter = 1;
+            var limit = 10;
+            function addFilter(divName){
+                 if (counter == limit)  {
+                      alert("You have reached the limit of adding " + counter + " filters");
+                 }
+                 else {
+                      var newdiv = document.createElement('div');
+                      newdiv.innerHTML = "Filter " + (counter + 1) + ": "
+                      + '<label>FilterKey <input type="text" name="filterKey[]" value="" /></label>'
+                      + '<label> FilterOP <input type="text" name="filterOP[]" value="" /></label>'
+                      + '<label> FilterValue <input type="text" name="filterValue[]" value="" /></label>'
+                      document.getElementById(divName).appendChild(newdiv);
+                      counter++;
+                 }
+            }
+        </script>
+
+
+            <p><label>Currency <input type="text" name="currency" id="currency" value="USD"/></label></p>
+
+
+    <p>
+
+        <button type="button" onclick="query()">Run Report</button>
+
+    </p>
+    <form>
+        <legend>RESULT</legend>
+    </form>
+        -----------------------------QueryParam------------------------------------
+        <br>
+    <form name="QueryParam" id="QueryParam">
+    </form>
+        <br>
+        -----------------------------QueryResult------------------------------------
+    <form name="QueryResult" id="QueryResult">
+    </form>
+        <br>
+
+
+
+        <script>
+        function query()
+        {
+            var queryParam =  '{'
+             + getSettings() + ','
+             + getGroup() + ','
+             + getData() + ','
+             + getFilters() + ','
+             + getSortBy() + ','
+             + getCurrency()
+             + '}'
+             ;
+
+            // testQuery();
+
+            document.getElementById("QueryParam").innerHTML = queryParam;
+            //fireQuery(queryParam);
+            getQuery(queryParam);
+
+        }
+
+         function getQuery(data) {
+            var url = "http://report.ymdruid.com:8080/report?style=pretty&report_param=" + data;
+            //var url = "http://test.druid.com:8888/report?style=pretty&report_param=" + data;
+            var method = "GET";
+
+            var async = false;
+
+            var request = new XMLHttpRequest();
+
+            request.onload = function () {
+               // You can get all kinds of information about the HTTP response.
+               var status = request.status; // HTTP response status, e.g., 200 for "200 OK"
+               var content = request.responseText; // Returned data, e.g., an HTML document.
+
+                if (status == 200) {
+                    document.getElementById("QueryResult").innerHTML= content;
+                } else {
+                    alert("Query Error");
+                }
+            }
+
+            request.open(method, url, async);
+
+            request.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+
+            request.send(null);
+        }
+
+
+        function fireQuery(data) {
+            var url = "http://test.druid.com:8888/report";
+            var method = "POST";
+            var postData = new FormData();
+            postData.append('report_param', data);
+            postData.append('style', 'pretty');
+
+            var async = false;
+
+            var request = new XMLHttpRequest();
+
+            request.onload = function () {
+               // You can get all kinds of information about the HTTP response.
+               var status = request.status; // HTTP response status, e.g., 200 for "200 OK"
+               var content = request.responseText; // Returned data, e.g., an HTML document.
+
+                document.getElementById("QueryResult").innerHTML= content;
+            }
+
+            request.open(method, url, async);
+
+            request.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+
+            request.send(postData);
+        }
+
+        function getSortBy() {
+           var sortBy = document.getElementById("sort");
+           var sort = '"sort"' + ':' + '[';
+
+           var found;
+            var inputs = document.getElementById('dynamicSort').getElementsByTagName('input');
+           var keys = getElems(inputs, 'sortKey[]');
+           var dirs = getElems(inputs, 'sortDir[]');
+
+           for (var i = 0; i < keys.length; ++i) {
+               var temp = sortByObj(keys[i].value, dirs[i].value);
+               if (temp) {
+                   sort += temp;
+                   sort += ',';
+                   found = 1;
+               }
+           }
+           if (found) {
+               sort = sort.substring(0,sort.length-1)
+           }
+           sort += ']';
+
+           return sort;
+        }
+
+        function sortByObj(key, dir) {
+            var res = "";
+            if (key) {
+               res += '{' + '"orderBy"' + ':' + '"' + key + '"';
+               res += ',';
+               if (dir) {
+                   res += '"order"' + ':' + dir;
+               } else {
+                   res += '"order"' + ':' + 1;
+               }
+               res += '}';
+            }
+            return res;
+
+        }
+
+        function getElems(parent, key) {
+            var elems = [];
+            for (var i = 0; i < parent.length; ++i) {
+                var elem = parent[i];
+                if(elem.type == 'text') {
+                    if (elem.name == key) {
+                        elems.push(elem);
+                    }
+                }
+            }
+            return elems;
+        }
+
+        function getFilters() {
+           var filterBy = document.getElementById("filters");
+           var filter = '"filters"' + ':' + '{';
+           filter += '"$and"' + ':' + '{';
+
+           var found;
+           var inputs = document.getElementById('dynamicFilter').getElementsByTagName('input');
+           var keys = getElems(inputs, 'filterKey[]');
+           var ops = getElems(inputs, 'filterOP[]');
+           var values = getElems(inputs, 'filterValue[]');
+
+           for (var i = 0; i < keys.length; ++i) {
+               var temp = filterByObj(keys[i].value, ops[i].value, values[i].value);
+               if (temp) {
+                   filter += temp;
+                   filter += ',';
+                   found = 1;
+               }
+           }
+           if (found) {
+               filter = filter.substring(0,filter.length-1)
+           }
+           filter += '}';
+           filter += '}';
+
+           return filter;
+        }
+
+        function filterByObj(key, op, value) {
+            var res = "";
+            if (key) {
+               res += '"' + key + '"';
+               res += ':';
+               res += '{' + '"' + op + '"' + ':';
+               if (op == '$in' || op == '$nin') {
+                   res += '[' + value + ']';
+               } else {
+                   res += value;
+               }
+               res += '}';
+            }
+            return res;
+
+        }
+
+
+        function getCurrency() {
+           var currency = document.getElementById("currency").value;
+           return '"currency":' + currency;
+        }
+
+
+        function getInterval() {
+           var intervalForm = document.getElementById("interval");
+           var tags = ['interval[]'];
+           var intervals = "";
+           for (var key in tags) {
+               var elems = intervalForm.elements[tags[key]];
+               if (elems) {
+                   for (var i = 0; i < elems.length; ++i) {
+                       var elem = elems[i];
+                       if (elem && elem.type && elem.type == 'checkbox' && elem.checked == true) {
+                           intervals += '"' + elem.value + '"';
+                           intervals += ',';
+                       }
+                   }
+               }
+           }
+           return intervals;
+       }
+
+
+
+        function getGroup() {
+           var groupForm = document.getElementById("category");
+           var category = '"category"' + ':' + '[';
+           var found;
+           var tags = ['offer[]', 'geo[]', 'ua[]', 'aff_sub[]', 'adv_sub[]'];
+           for (var key in tags) {
+               var elems = groupForm.elements[tags[key]];
+               if (elems) {
+                   for (var i = 0; i < elems.length; ++i) {
+                       var elem = elems[i];
+                       if (elem && elem.type && elem.type == 'checkbox' && elem.checked == true) {
+                           category += '"' + elem.value + '"';
+                           category += ',';
+                           found = 1;
+                       }
+                   }
+               }
+           }
+
+           var intervals = getInterval();
+           if (intervals) {
+               found = 1;
+               category += intervals;
+           }
+
+           if (found) {
+               category = category.substring(0,category.length-1)
+           }
+           category += ']';
+
+           return category;
+
+        }
+
+
+        function getData() {
+           var dataForm = document.getElementById("data");
+           var data = '"data"' + ':' + '[';
+           var found;
+           var tags = ['agg[]', 'postAgg[]'];
+
+           for (var key in tags) {
+               var elems = dataForm.elements[tags[key]];
+               if (elems) {
+                   for (var i = 0; i < elems.length; ++i) {
+                       var elem = elems[i];
+                       if (elem && elem.type && elem.type == 'checkbox' && elem.checked == true) {
+                           data += '"' + elem.value + '"';
+                           data += ',';
+                           found = 1;
+                       }
+                   }
+               }
+           }
+
+           if (found) {
+               data = data.substring(0,data.length-1)
+           }
+           data += ']';
+
+           return data;
+
+        }
+
+
+        function getSettings() {
+           var timeForm = document.getElementById("settings");
+           var setting;
+
+           setting = objStart('settings');
+
+           setting += objStart('time')
+           var start = timeForm["start"].value;
+           if (! start) {
+               start = Math.round(new Date()/1000);
+           }
+           setting = appendValue(setting, 'start', start);
+           var end = timeForm["end"].value;
+           if (! end) {
+               end = Math.round(new Date()/1000);
+           }
+           setting += ',';
+           setting = appendValue(setting, 'end', end);
+           var tz = timeForm["timezone"].value;
+           setting += ',';
+           setting = appendValue(setting, 'timezone', tz);
+           setting += objEnd();
+
+           setting += ',';
+           var ds = timeForm["data_source"].value;
+           setting = appendStrValue(setting, 'data_source', ds);
+
+           setting += ',';
+           setting += objStart('pagination')
+           var size = timeForm["size"].value;
+           setting = appendValue(setting, 'size', size);
+           setting += ',';
+           var page = timeForm["page"].value;
+           setting = appendValue(setting, 'page', page);
+           setting += objEnd();
+
+           setting += objEnd();
+
+           return setting;
+
+        }
+
+        function objStart(name) {
+            return '"' + name + '"' + ':' + '{';
+        }
+
+        function objEnd() {
+            return '}';
+        }
+
+        function appendValue(val, name, value) {
+            return val + '"' + name + '"' + ':' + value;
+        }
+
+        function appendStrValue(val, name, value, type) {
+            return val + '"' + name + '"' + ':' + '"' + value + '"';
+        }
+
+        </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Druid Query Server of YeahMobi</title>
+<script language="javascript">
+	function click2() {
+
+		/* alert("Hello"); */
+		document.getElementById("resultdisplay").value = getQuery();
+
+	}
+
+	function getQuery() {
+		var data = document.getElementById("query").value;
+		var url = "./checkschema?report_param=" + data;
+		var method = "GET";
+
+		var async = false;
+
+		var request = new XMLHttpRequest();
+
+		var content = null;
+
+		request.onload = function() {
+			// You can get all kinds of information about the HTTP response.
+			var status = request.status; // HTTP response status, e.g., 200 for "200 OK"
+			content = request.responseText; // Returned data, e.g., an HTML document.
+
+			if (status == 200) {
+				document.getElementById("QueryResult").innerHTML = content;
+			} else {
+				alert("Query Error");
+			}
+		}
+		request.open(method, url, async);
+
+		request.setRequestHeader("Content-Type",
+				"application/json;charset=UTF-8");
+
+		request.send(null);
+
+		return content;
+	}
+</script>
+</head>
+<body>
+	<center>
+		<textarea id="query" rows="25" cols="40"></textarea>
+	</center>
+	<br />
+	<center>
+		<input type="text" id="resultdisplay" name="resultdisplay"
+			value="result" style="width: 300px" readonly="readonly" /> <input
+			name="hi" type="button" value="检查" onClick="click2()">
+	</center>
+</body>
+</html>

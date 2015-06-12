@@ -1,0 +1,6 @@
+{
+    "groups"		:	["offer_id", "device_id", "country_id","click_id","campaign_id","ref_site","site","click_time","cost_per_click","payout","real_ip","proxy_ip","os_id","carrier_id","mobile_brand_id","screen_h","screen_w","screen_id","city_id","brand_id","model_id","state_id","conversion_time","event","sub1","sub2","sub3","sub4","sub5","sub6","sub7","sub8","hour","day","week","month","year","sub_campaign_id","device_name","os_name","screen_h_name","screen_w_name","screen_name","brand_name","model_name","country_name","state_name","carrier_name","mobile_brand_name","city_name","affiliate_id","country_code"],
+	"basicFields"	:	["outs", "clicks", "convs", "income", "cost"],
+	"others"		:	["sub1"],
+	"metrics"		:   {"ctr":"(ifnull(cast(b.outs as decimal) / nullif(cast(a.clicks as decimal),0),0))", "net":"(ifnull(cast(b.income as decimal)-cast(a.cost as decimal),0))", "epc":"(ifnull(cast(b.income as decimal) / nullif(cast(a.clicks as decimal),0),0))", "cr": "(ifnull(cast(b.convs as decimal) / nullif(cast(a.clicks as decimal),0),0))", "roi":"(ifnull((cast(b.income as decimal)-cast(a.cost as decimal))/nullif(cast(a.cost as decimal),0),0))"}
+}

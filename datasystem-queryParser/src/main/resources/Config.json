@@ -1,0 +1,13 @@
+{
+  "druid" : {
+    "host" : "172.20.0.47",
+    "port" : "8080",
+    "ver" : "v2",
+    "format" : "pretty"
+  },
+  "router" : {
+    "host" : "172.20.0.51",
+    "port" : "8080",
+    "ver" : "datasystem-druid-router"
+  }
+}

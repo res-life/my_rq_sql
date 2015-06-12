@@ -1,0 +1,251 @@
+{
+	"click_id": {
+		"name": "click_id",
+		"alisa": "click_id",
+		"valueType": "STRING",
+		"defaultValue": ""
+	},
+	"campaign_id": {
+		"name": "campaign_id",
+		"alisa": "campaign_id",
+		"valueType": "STRING",
+		"defaultValue": 0
+	},
+	"offer_id": {
+		"name": "offer_id",
+		"alisa": "offer_id",
+		"valueType": "STRING",
+		"defaultValue": 0
+	},
+	"ref_site": {
+		"name": "ref_site",
+		"alisa": "ref_site",
+		"valueType": "STRING",
+		"defaultValue": "",
+		"maxLength": 300
+	},
+	"site": {
+		"name": "site",
+		"alisa": "site",
+		"valueType": "STRING",
+		"defaultValue": ""
+	},
+	"click_time": {
+		"name": "click_time",
+		"alisa": "click_time",
+		"valueType": "STRING",
+		"defaultValue": 0
+	},
+	"real_ip": {
+		"name": "real_ip",
+		"alisa": "real_ip",
+		"valueType": "STRING",
+		"defaultValue": ""
+	},
+	"proxy_ip": {
+		"name": "proxy_ip",
+		"alisa": "proxy_ip",
+		"valueType": "STRING",
+		"defaultValue": ""
+	},
+	"conversion_time": {
+		"name": "conversion_time",
+		"alisa": "conversion_time",
+		"valueType": "STRING",
+		"defaultValue": 0
+	},
+	"event": {
+		"name": "event",
+		"alisa": "event",
+		"valueType": "STRING",
+		"defaultValue": 0
+	},
+	"sub1": {
+		"name": "sub1",
+		"alisa": "sub1",
+		"valueType": "STRING",
+		"defaultValue": "",
+		"maxLength": 300
+	},
+	"sub2": {
+		"name": "sub2",
+		"alisa": "sub2",
+		"valueType": "STRING",
+		"defaultValue": "",
+		"maxLength": 300
+	},
+	"sub3": {
+		"name": "sub3",
+		"alisa": "sub3",
+		"valueType": "STRING",
+		"defaultValue": "",
+		"maxLength": 300
+	},
+	"sub4": {
+		"name": "sub4",
+		"alisa": "sub4",
+		"valueType": "STRING",
+		"defaultValue": "",
+		"maxLength": 300
+	},
+	"sub5": {
+		"name": "sub5",
+		"alisa": "sub5",
+		"valueType": "STRING",
+		"defaultValue": "",
+		"maxLength": 300
+	},
+	"sub6": {
+		"name": "sub6",
+		"alisa": "sub6",
+		"valueType": "STRING",
+		"defaultValue": "",
+		"maxLength": 300
+	},
+	"sub7": {
+		"name": "sub7",
+		"alisa": "sub7",
+		"valueType": "STRING",
+		"defaultValue": "",
+		"maxLength": 300
+	},
+	"sub8": {
+		"name": "sub8",
+		"alisa": "sub8",
+		"valueType": "STRING",
+		"defaultValue": "",
+		"maxLength": 300
+	},
+	"payout": {
+		"name": "payout",
+		"alisa": "payout",
+		"valueType": "DECIMAL",
+		"defaultValue": ""
+	},
+	"cost_per_click": {
+		"name": "cost_per_click",
+		"alisa": "cost_per_click",
+		"valueType": "DECIMAL",
+		"defaultValue": ""
+	},
+	"hour": {
+		"name": "hour",
+		"alisa": "hour",
+		"valueType": "STRING",
+		"defaultValue": ""
+	},
+	"day": {
+		"name": "day",
+		"alisa": "day",
+		"valueType": "STRING",
+		"defaultValue": ""
+	},
+	"week": {
+		"name": "week",
+		"alisa": "week",
+		"valueType": "STRING",
+		"defaultValue": ""
+	},
+	"month": {
+		"name": "month",
+		"alisa": "month",
+		"valueType": "STRING",
+		"defaultValue": ""
+	},
+	"year": {
+		"name": "year",
+		"alisa": "year",
+		"valueType": "STRING",
+		"defaultValue": ""
+	},
+    "sub_campaign_id": {
+            "name": "sub_campaign_id",
+            "alisa": "sub_campaign_id",
+            "valueType": "STRING",
+            "defaultValue": ""
+    },
+    "device_name": {
+            "name": "device_name",
+            "alisa": "device_name",
+            "valueType": "STRING",
+            "defaultValue": ""
+    },
+    "os_name": {
+            "name": "os_name",
+            "alisa": "os_name",
+            "valueType": "STRING",
+            "defaultValue": ""
+    },
+    "screen_h_name": {
+            "name": "screen_h_name",
+            "alisa": "screen_h_name",
+            "valueType": "STRING",
+            "defaultValue": ""
+    },
+    "screen_w_name": {
+            "name": "screen_w_name",
+            "alisa": "screen_w_name",
+            "valueType": "STRING",
+            "defaultValue": ""
+    },
+    "screen_name": {
+            "name": "screen_name",
+            "alisa": "screen_name",
+            "valueType": "STRING",
+            "defaultValue": ""
+    },
+    "brand_name": {
+            "name": "brand_name",
+            "alisa": "brand_name",
+            "valueType": "STRING",
+            "defaultValue": ""
+    },
+    "model_name": {
+            "name": "model_name",
+            "alisa": "model_name",
+            "valueType": "STRING",
+            "defaultValue": ""
+    },
+    "country_name": {
+            "name": "country_name",
+            "alisa": "country_name",
+            "valueType": "STRING",
+            "defaultValue": ""
+    },
+    "state_name": {
+            "name": "state_name",
+            "alisa": "state_name",
+            "valueType": "STRING",
+            "defaultValue": ""
+    },
+    "carrier_name": {
+            "name": "carrier_name",
+            "alisa": "carrier_name",
+            "valueType": "STRING",
+            "defaultValue": ""
+    },
+    "mobile_brand_name": {
+            "name": "mobile_brand_name",
+            "alisa": "mobile_brand_name",
+            "valueType": "STRING",
+            "defaultValue": ""
+    },
+    "city_name": {
+            "name": "city_name",
+            "alisa": "city_name",
+            "valueType": "STRING",
+            "defaultValue": ""
+    },
+    "affiliate_id": {
+            "name": "affiliate_id",
+            "alisa": "affiliate_id",
+            "valueType": "STRING",
+            "defaultValue": ""
+    },
+    "country_code": {
+            "name": "country_code",
+            "alisa": "country_code",
+            "valueType": "STRING",
+            "defaultValue": ""
+    }
+}

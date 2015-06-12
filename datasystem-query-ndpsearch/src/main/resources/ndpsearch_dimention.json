@@ -1,0 +1,260 @@
+{
+    "query": {
+        "name": "query",
+        "alisa": "query",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "topresultcount": {
+        "name": "topresultcount",
+        "alisa": "topresultcount",
+        "valueType": "NUMBER",
+        "defaultValue": 0
+    },
+    "bottomresultcount": {
+        "name": "bottomresultcount",
+        "alisa": "bottomresultcount",
+        "valueType": "NUMBER",
+        "defaultValue": 0
+    },
+    "mainresultcount": {
+        "name": "mainresultcount",
+        "alisa": "mainresultcount",
+        "valueType": "NUMBER",
+        "defaultValue": 0
+    },
+    "sessionid": {
+        "name": "sessionid",
+        "alisa": "sessionid",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "ndpuid": {
+        "name": "ndpuid",
+        "alisa": "ndpuid",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "rip": {
+        "name": "rip",
+        "alisa": "rip",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "ip": {
+        "name": "ip",
+        "alisa": "ip",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "useragent": {
+        "name": "useragent",
+        "alisa": "useragent",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "country": {
+        "name": "country",
+        "alisa": "country",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "cc": {
+        "name": "cc",
+        "alisa": "cc",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "cid": {
+        "name": "cid",
+        "alisa": "cid",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "organicsourceid": {
+        "name": "organicsourceid",
+        "alisa": "organicsourceid",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "adsourceid": {
+        "name": "adsourceid",
+        "alisa": "adsourceid",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "segment": {
+        "name": "segment",
+        "alisa": "segment",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "position": {
+        "name": "position",
+        "alisa": "position",
+        "valueType": "NUMBER",
+        "defaultValue": 0
+    },
+    "region": {
+        "name": "region",
+        "alisa": "region",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "enduserip": {
+        "name": "enduserip",
+        "alisa": "enduserip",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "displayurl": {
+        "name": "displayurl",
+        "alisa": "displayurl",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "adid": {
+        "name": "adid",
+        "alisa": "adid",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "lang": {
+        "name": "lang",
+        "alisa": "lang",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "tz": {
+        "name": "tz",
+        "alisa": "tz",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "uid": {
+        "name": "uid",
+        "alisa": "uid",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "im": {
+        "name": "im",
+        "alisa": "im",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "brand": {
+        "name": "brand",
+        "alisa": "brand",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "model": {
+        "name": "model",
+        "alisa": "model",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "pn": {
+        "name": "pn",
+        "alisa": "pn",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "osver": {
+        "name": "osver",
+        "alisa": "osver",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "mac": {
+        "name": "mac",
+        "alisa": "mac",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "network": {
+        "name": "network",
+        "alisa": "network",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "category": {
+        "name": "category",
+        "alisa": "category",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "pg": {
+        "name": "pg",
+        "alisa": "pg",
+        "valueType": "NUMBER",
+        "defaultValue": 0
+    },
+    "contentloadtime": {
+        "name": "contentloadtime",
+        "alisa": "contentloadtime",
+        "valueType": "NUMBER",
+        "defaultValue": 0
+    },
+    "tp": {
+        "name": "ty",
+        "alisa": "ty",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "requests": {
+        "name": "requests",
+        "alisa": "requests",
+        "valueType": "NUMBER",
+        "defaultValue": 0
+    },
+    "searches": {
+        "name": "searches",
+        "alisa": "searches",
+        "valueType": "NUMBER",
+        "defaultValue": 0
+    },
+    "organicimps": {
+        "name": "organicimps",
+        "alisa": "organicimps",
+        "valueType": "NUMBER",
+        "defaultValue": 0
+    },
+    "adimps": {
+        "name": "adimps",
+        "alisa": "adimps",
+        "valueType": "NUMBER",
+        "defaultValue": 0
+    },
+    "grossimps": {
+        "name": "grossimps",
+        "alisa": "grossimps",
+        "valueType": "NUMBER",
+        "defaultValue": 0
+    },
+    "organicclicks": {
+        "name": "organicclicks",
+        "alisa": "organicclicks",
+        "valueType": "NUMBER",
+        "defaultValue": 0
+    },
+    "adclicks": {
+        "name": "adclicks",
+        "alisa": "adclicks",
+        "valueType": "NUMBER",
+        "defaultValue": 0
+    },
+    "revenue": {
+        "name": "revenue",
+        "alisa": "revenue",
+        "valueType": "NUMBER",
+        "defaultValue": 0
+    },
+    "revshare": {
+        "name": "revShare",
+        "alisa": "revshare",
+        "valueType": "NUMBER",
+        "defaultValue": 0
+    }
+}

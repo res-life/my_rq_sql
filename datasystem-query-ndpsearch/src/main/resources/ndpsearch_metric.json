@@ -1,0 +1,128 @@
+{
+  "requests" : {
+    "alisa" : "requests",
+    "name" : "sum(requests)",
+    "formula" : "(longsum(requests) as requests)",
+    "level" : 1,
+    "precision" : 0
+  },
+  "searches" : {
+    "alisa" : "searches",
+    "name" : "sum(searches)",
+    "formula" : "(longsum(searches) as searches)",
+    "level" : 1,
+    "precision" : 0
+  },
+  "organicimps" : {
+    "alisa" : "organicimps",
+    "name" : "sum(organicimps)",
+    "formula" : "(longsum(organicimps) as organicimps)",
+    "level" : 1,
+    "precision" : 0
+  },
+  "adimps" : {
+    "alisa" : "adimps",
+    "name" : "sum(adimps)",
+    "formula" : "(longsum(adimps) as adimps)",
+    "level" : 1,
+    "precision" : 0
+  },
+  "grossimps" : {
+    "alisa" : "grossimps",
+    "name" : "sum(grossimps)",
+    "formula" : "(longsum(grossimps) as grossimps)",
+    "level" : 1,
+    "precision" : 0
+  },
+  "organicclicks" : {
+    "alisa" : "organicclicks",
+    "name" : "sum(organicclicks)",
+    "formula" : "(longsum(organicclicks) as organicclicks)",
+    "level" : 1,
+    "precision" : 0
+  },
+  "adclicks" : {
+    "alisa" : "adclicks",
+    "name" : "sum(adclicks)",
+    "formula" : "(longsum(adclicks) as adclicks)",
+    "level" : 1,
+    "precision" : 0
+  },
+  "revenues" : {
+    "alisa" : "revenues",
+    "name" : "sum(revenue)",
+    "formula" : "(longsum(revenue) as revenues)",
+    "level" : 1,
+    "precision" : 3
+  },
+  "revenueshare" : {
+    "alisa" : "revenueshare",
+    "name" : "sum(revshare)",
+    "formula" : "(longsum(revshare) as revenueshare)",
+    "level" : 1,
+    "precision" : 3
+  },
+  "organicfillrate" : {
+    "alisa" : "organicfillrate",
+    "name" : "(organicimps/requests)",
+    "formula" : "(sum(organicimps)/sum(requests) as organicfillrate)",
+    "level" : 2,
+    "precision" : 4
+  },
+  "adfillrate" : {
+    "alisa" : "adfillrate",
+    "name" : "(adimps/requests)",
+    "formula" : "(sum(adimps)/sum(requests) as adfillrate)",
+    "level" : 2,
+    "precision" : 4
+  },
+  "grossfillrate" : {
+    "alisa" : "grossfillrate",
+    "name" : "(grossimps/requests)",
+    "formula" : "(sum(grossimps)/sum(requests) as grossfillrate)",
+    "level" : 2,
+    "precision" : 4
+  },
+  "organicctr" : {
+    "alisa" : "organicctr",
+    "name" : "(organicclicks/searches)",
+    "formula" : "(sum(organicclicks)/sum(searches) as organicctr)",
+    "level" : 2,
+    "precision" : 4
+  },
+  "trueorganicctr" : {
+    "alisa" : "trueorganicctr",
+    "name" : "(organicclicks/requests)",
+    "formula" : "(sum(organicclicks)/sum(requests) as trueorganicctr)",
+    "level" : 2,
+    "precision" : 4
+  },
+  "adctr" : {
+    "alisa" : "adctr",
+    "name" : "(adclicks/searches)",
+    "formula" : "(sum(adclicks)/sum(searches) as adctr)",
+    "level" : 2,
+    "precision" : 4
+  },
+  "trueadctr" : {
+    "alisa" : "trueadctr",
+    "name" : "(adclicks/requests)",
+    "formula" : "(sum(adclicks)/sum(requests) as trueadctr)",
+    "level" : 2,
+    "precision" : 4
+  },
+  "epc" : {
+    "alisa" : "epc",
+    "name" : "(revenues/adclicks)",
+    "formula" : "(sum(revenue)/sum(adclicks) as epc)",
+    "level" : 2,
+    "precision" : 3
+  },
+  "rpm" : {
+    "alisa" : "rpm",
+    "name" : "(revenues/requests)",
+    "formula" : "(sum(revenue)/sum(requests) as rpm)",
+    "level" : 2,
+    "precision" : 3
+  }
+}

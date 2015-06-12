@@ -1,0 +1,233 @@
+{
+	"click_id": {
+		"name": "click_id",
+		"alisa": "click_id",
+		"valueType": "STRING",
+		"defaultValue": ""
+	},
+	"campaign_id": {
+		"name": "campaign_id",
+		"alisa": "campaign_id",
+		"valueType": "STRING",
+		"defaultValue": 0
+	},
+	"offer_id": {
+		"name": "offer_id",
+		"alisa": "offer_id",
+		"valueType": "STRING",
+		"defaultValue": 0
+	},
+	"ref_site": {
+		"name": "ref_site",
+		"alisa": "ref_site",
+		"valueType": "STRING",
+		"defaultValue": "",
+		"maxLength": 300
+	},
+	"site": {
+		"name": "site",
+		"alisa": "site",
+		"valueType": "STRING",
+		"defaultValue": ""
+	},
+	"click_time": {
+		"name": "click_time",
+		"alisa": "click_time",
+		"valueType": "STRING",
+		"defaultValue": 0
+	},
+	"real_ip": {
+		"name": "real_ip",
+		"alisa": "real_ip",
+		"valueType": "STRING",
+		"defaultValue": ""
+	},
+	"proxy_ip": {
+		"name": "proxy_ip",
+		"alisa": "proxy_ip",
+		"valueType": "STRING",
+		"defaultValue": ""
+	},
+	"device_id": {
+		"name": "device_id",
+		"alisa": "device_id",
+		"valueType": "NUMBER",
+		"defaultValue": 0
+	},
+	"os_id": {
+		"name": "os_id",
+		"alisa": "os_id",
+		"valueType": "NUMBER",
+		"defaultValue": 0
+	},
+	"carrier_id": {
+		"name": "carrier_id",
+		"alisa": "carrier_id",
+		"valueType": "NUMBER",
+		"defaultValue": 0
+	},
+	"mobile_brand_id": {
+		"name": "mobile_brand_id",
+		"alisa": "mobile_brand_id",
+		"valueType": "NUMBER",
+		"defaultValue": 0
+	},
+	"screen_h": {
+		"name": "screen_h",
+		"alisa": "screen_h",
+		"valueType": "NUMBER",
+		"defaultValue": 0
+	},
+	"screen_w": {
+		"name": "screen_w",
+		"alisa": "screen_w",
+		"valueType": "NUMBER",
+		"defaultValue": 0
+	},
+	"screen_id": {
+		"name": "screen_id",
+		"alisa": "screen_id",
+		"valueType": "NUMBER",
+		"defaultValue": 0
+	},
+	"city_id": {
+		"name": "city_id",
+		"alisa": "city_id",
+		"valueType": "STRING",
+		"defaultValue": 0
+	},
+	"brand_id": {
+		"name": "brand_id",
+		"alisa": "brand_id",
+		"valueType": "NUMBER",
+		"defaultValue": 0
+	},
+	"model_id": {
+		"name": "model_id",
+		"alisa": "model_id",
+		"valueType": "NUMBER",
+		"defaultValue": 0
+	},
+	"country_id": {
+		"name": "country_id",
+		"alisa": "country_id",
+		"valueType": "STRING",
+		"defaultValue": 0
+	},
+	"state_id": {
+		"name": "state_id",
+		"alisa": "state_id",
+		"valueType": "STRING",
+		"defaultValue": 0
+	},
+	"conversion_time": {
+		"name": "conversion_time",
+		"alisa": "conversion_time",
+		"valueType": "STRING",
+		"defaultValue": 0
+	},
+	"event": {
+		"name": "event",
+		"alisa": "event",
+		"valueType": "STRING",
+		"defaultValue": 0
+	},
+	"sub1": {
+		"name": "sub1",
+		"alisa": "sub1",
+		"valueType": "STRING",
+		"defaultValue": "",
+		"maxLength": 300
+	},
+	"sub2": {
+		"name": "sub2",
+		"alisa": "sub2",
+		"valueType": "STRING",
+		"defaultValue": "",
+		"maxLength": 300
+	},
+	"sub3": {
+		"name": "sub3",
+		"alisa": "sub3",
+		"valueType": "STRING",
+		"defaultValue": "",
+		"maxLength": 300
+	},
+	"sub4": {
+		"name": "sub4",
+		"alisa": "sub4",
+		"valueType": "STRING",
+		"defaultValue": "",
+		"maxLength": 300
+	},
+	"sub5": {
+		"name": "sub5",
+		"alisa": "sub5",
+		"valueType": "STRING",
+		"defaultValue": "",
+		"maxLength": 300
+	},
+	"sub6": {
+		"name": "sub6",
+		"alisa": "sub6",
+		"valueType": "STRING",
+		"defaultValue": "",
+		"maxLength": 300
+	},
+	"sub7": {
+		"name": "sub7",
+		"alisa": "sub7",
+		"valueType": "STRING",
+		"defaultValue": "",
+		"maxLength": 300
+	},
+	"sub8": {
+		"name": "sub8",
+		"alisa": "sub8",
+		"valueType": "STRING",
+		"defaultValue": "",
+		"maxLength": 300
+	},
+	"payout": {
+		"name": "payout",
+		"alisa": "payout",
+		"valueType": "STRING",
+		"defaultValue": ""
+	},
+	"cost_per_click": {
+		"name": "cost_per_click",
+		"alisa": "cost_per_click",
+		"valueType": "STRING",
+		"defaultValue": ""
+	},
+	"hour": {
+		"name": "hour",
+		"alisa": "hour",
+		"valueType": "STRING",
+		"defaultValue": ""
+	},
+	"day": {
+		"name": "day",
+		"alisa": "day",
+		"valueType": "STRING",
+		"defaultValue": ""
+	},
+	"week": {
+		"name": "week",
+		"alisa": "week",
+		"valueType": "STRING",
+		"defaultValue": ""
+	},
+	"month": {
+		"name": "month",
+		"alisa": "month",
+		"valueType": "STRING",
+		"defaultValue": ""
+	},
+	"year": {
+		"name": "year",
+		"alisa": "year",
+		"valueType": "STRING",
+		"defaultValue": ""
+	}
+}

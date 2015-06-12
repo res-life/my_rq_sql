@@ -1,0 +1,100 @@
+{
+  "profit" : {
+    "alisa" : "profit",
+    "name" : "(revenue-cost)",
+    "formula" : "((doublesum(revenue) - doublesum(cost)) as profit)",
+    "level" : 2,
+    "precision" : 3
+  },
+  "epc" : {
+    "alisa" : "epc",
+    "name" : "(cost/click)",
+    "formula" : "(doublesum(cost) / longsum(click) as epc)",
+    "level" : 2,
+    "precision" : 3
+  },
+  "conversion" : {
+    "alisa" : "conversion",
+    "name" : "sum(conversion)",
+    "formula" : "(longsum(conversion) as conversion)",
+    "level" : 1,
+    "precision" : 0
+  },
+  "test" : {
+    "alisa" : "test",
+    "name" : "test",
+    "formula" : "(js(test:conversion,rpa:[a,b,\"a*b\"]:+:0))",
+    "level" : 2,
+    "precision" : 3
+  },
+  "arpa" : {
+    "alisa" : "arpa",
+    "name" : "(revenue/conversion)",
+    "formula" : "(doublesum(revenue) / longsum(conversion) as arpa)",
+    "level" : 2,
+    "precision" : 2
+  },
+  "click" : {
+    "alisa" : "click",
+    "name" : "sum(click)",
+    "formula" : "(longsum(click) as click)",
+    "level" : 1,
+    "precision" : 0
+  },
+  "acpa" : {
+    "alisa" : "acpa",
+    "name" : "(cost/conversion)",
+    "formula" : "(doublesum(cost) / longsum(conversion) as acpa)",
+    "level" : 2,
+    "precision" : 2
+  },
+  "cost" : {
+    "alisa" : "cost",
+    "name" : "sum(cost)",
+    "formula" : "(doublesum(cost) as cost)",
+    "level" : 1,
+    "precision" : 3
+  },
+  "cr" : {
+    "alisa" : "cr",
+    "name" : "(conversion/click)",
+    "formula" : "(longsum(conversion) / longsum(click) as cr)",
+    "level" : 2,
+    "precision" : 4
+  },
+  "rpc" : {
+    "alisa" : "rpc",
+    "name" : "(revenue/click)",
+    "formula" : "(doublesum(revenue) / longsum(click) as rpc)",
+    "level" : 2,
+    "precision" : 3
+  },
+  "cpc" : {
+    "alisa" : "cpc",
+    "name" : "(cost/click)",
+    "formula" : "(doublesum(cost) / longsum(click) as cpc)",
+    "level" : 2,
+    "precision" : 3
+  },
+  "unique_click" : {
+    "alisa" : "unique_click",
+    "name" : "sum(unique_click)",
+    "formula" : "(longsum(unique_click) as unique_click)",
+    "level" : 1,
+    "precision" : 0
+  },
+  "revenue" : {
+    "alisa" : "revenue",
+    "name" : "sum(revenue)",
+    "formula" : "(doublesum(revenue) as revenue)",
+    "level" : 1,
+    "precision" : 3
+  },
+  "rows" : {
+    "alisa" : "rows",
+    "name" : "sum(rows)",
+    "formula" : "(count(*) as rows)",
+    "level" : 1,
+    "precision" : 0
+  }
+}

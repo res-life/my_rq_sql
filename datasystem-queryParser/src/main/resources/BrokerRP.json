@@ -1,0 +1,9 @@
+[
+  {		
+  	"dataSource":"ymds_druid_datasource.0",
+	"host": "broker.yeahmobi.com",
+	"port": "80",
+	"ver": "v2",
+	"format": "pretty"
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "enableL1" : true,
+  "enableL2" : true,
+  "clearL1" : false,
+  "clearL2" : false,
+  "maxCapacityL2" : 1000000,
+  "timeUnit" : 300
+}

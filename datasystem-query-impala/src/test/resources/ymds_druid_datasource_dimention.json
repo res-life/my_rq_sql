@@ -1,0 +1,417 @@
+{
+    "visitor_node_id": {
+        "name": "visitor_node_id",
+        "alisa": "visitor_node_id",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "aff_manager": {
+        "name": "aff_manager",
+        "alisa": "aff_manager",
+        "valueType": "NUMBER",
+        "defaultValue": 0
+    },
+    "track_type": {
+        "name": "track_type",
+        "alisa": "track_type",
+        "valueType": "NUMBER",
+        "defaultValue": 0
+    },
+    "offer_id": {
+        "name": "offer_id",
+        "alisa": "offer_id",
+        "valueType": "NUMBER",
+        "defaultValue": 0
+    },
+    "aff_sub6": {
+        "name": "aff_sub6",
+        "alisa": "aff_sub6",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "aff_sub7": {
+        "name": "aff_sub7",
+        "alisa": "aff_sub7",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "aff_sub8": {
+        "name": "aff_sub8",
+        "alisa": "aff_sub8",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "adv_sub3": {
+        "name": "adv_sub3",
+        "alisa": "adv_sub3",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "aff_sub2": {
+        "name": "aff_sub2",
+        "alisa": "aff_sub2",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "adv_sub2": {
+        "name": "adv_sub2",
+        "alisa": "adv_sub2",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "aff_sub3": {
+        "name": "aff_sub3",
+        "alisa": "aff_sub3",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "adv_sub1": {
+        "name": "adv_sub1",
+        "alisa": "adv_sub1",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "aff_sub4": {
+        "name": "aff_sub4",
+        "alisa": "aff_sub4",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "aff_sub5": {
+        "name": "aff_sub5",
+        "alisa": "aff_sub5",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "city": {
+        "name": "city",
+        "alisa": "city",
+        "valueType": "NUMBER",
+        "defaultValue": 0
+    },
+    "click_ip": {
+        "name": "click_ip",
+        "alisa": "click_ip",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "device_model": {
+        "name": "device_model",
+        "alisa": "device_model",
+        "valueType": "NUMBER",
+        "defaultValue": 0
+    },
+    "aff_sub1": {
+        "name": "aff_sub1",
+        "alisa": "aff_sub1",
+        "valueType": "STRING",
+        "defaultValue": "",
+        "maxLength": 1024
+    },
+    "platform_id": {
+        "name": "platform_id",
+        "alisa": "platform_id",
+        "valueType": "NUMBER",
+        "defaultValue": 0
+    },
+    "rpa": {
+        "name": "rpa",
+        "alisa": "rpa",
+        "valueType": "DECIMAL",
+        "defaultValue": 0
+    },
+    "cpa": {
+        "name": "cpa",
+        "alisa": "cpa",
+        "valueType": "DECIMAL",
+        "defaultValue": 0
+    },
+    "log_tye": {
+        "name": "log_tye",
+        "alisa": "log_tye",
+        "valueType": "NUMBER",
+        "defaultValue": 0
+    },
+    "click_time": {
+        "name": "click_time",
+        "alisa": "click_time",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "adv_id": {
+        "name": "adv_id",
+        "alisa": "adv_id",
+        "valueType": "NUMBER",
+        "defaultValue": 0
+    },
+    "conv_time": {
+        "name": "conv_time",
+        "alisa": "conv_time",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "isp": {
+        "name": "isp",
+        "alisa": "isp",
+        "valueType": "NUMBER",
+        "defaultValue": 0
+    },
+    "gcname": {
+        "name": "gcname",
+        "alisa": "gcname",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "screen_width": {
+        "name": "screen_width",
+        "alisa": "screen_width",
+        "valueType": "NUMBER",
+        "defaultValue": 0
+    },
+    "ref_track_site": {
+        "name": "ref_track_site",
+        "alisa": "ref_track_site",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "aff_id": {
+        "name": "aff_id",
+        "alisa": "aff_id",
+        "valueType": "NUMBER",
+        "defaultValue": 0
+    },
+    "transaction_id": {
+        "name": "transaction_id",
+        "alisa": "transaction_id",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "country": {
+        "name": "country",
+        "alisa": "country",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "expiration_date": {
+        "name": "expiration_date",
+        "alisa": "expiration_date",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "mobile_brand": {
+        "name": "mobile_brand",
+        "alisa": "mobile_brand",
+        "valueType": "NUMBER",
+        "defaultValue": 0
+    },
+    "is_unique_click": {
+        "name": "is_unique_click",
+        "alisa": "is_unique_click",
+        "valueType": "NUMBER",
+        "defaultValue": 0
+    },
+    "session_id": {
+        "name": "session_id",
+        "alisa": "session_id",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "device_type": {
+        "name": "device_type",
+        "alisa": "device_type",
+        "valueType": "NUMBER",
+        "defaultValue": 0
+    },
+    "adv_sub7": {
+        "name": "adv_sub7",
+        "alisa": "adv_sub7",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "state": {
+        "name": "state",
+        "alisa": "state",
+        "valueType": "NUMBER",
+        "defaultValue": 0
+    },
+    "adv_sub6": {
+        "name": "adv_sub6",
+        "alisa": "adv_sub6",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "adv_sub5": {
+        "name": "adv_sub5",
+        "alisa": "adv_sub5",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "adv_sub4": {
+        "name": "adv_sub4",
+        "alisa": "adv_sub4",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "gcid": {
+        "name": "gcid",
+        "alisa": "gcid",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "currency": {
+        "name": "currency",
+        "alisa": "currency",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "adv_sub8": {
+        "name": "adv_sub8",
+        "alisa": "adv_sub8",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "ref_track": {
+        "name": "ref_track",
+        "alisa": "ref_track",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "device_os": {
+        "name": "device_os",
+        "alisa": "device_os",
+        "valueType": "NUMBER",
+        "defaultValue": 0
+    },
+    "browser": {
+        "name": "browser",
+        "alisa": "browser",
+        "valueType": "NUMBER",
+        "defaultValue": 0
+    },
+    "conversions": {
+        "name": "conversions",
+        "alisa": "conversions",
+        "valueType": "NUMBER",
+        "defaultValue": 0
+    },
+    "visitor_id": {
+        "name": "visitor_id",
+        "alisa": "visitor_id",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "conv_ip": {
+        "name": "conv_ip",
+        "alisa": "conv_ip",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "x_forwarded_for": {
+        "name": "x_forwarded_for",
+        "alisa": "x_forwarded_for",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "device_brand": {
+        "name": "device_brand",
+        "alisa": "device_brand",
+        "valueType": "NUMBER",
+        "defaultValue": 0
+    },
+    "type_id": {
+        "name": "type_id",
+        "alisa": "type_id",
+        "valueType": "NUMBER",
+        "defaultValue": 0
+    },
+    "adv_manager": {
+        "name": "adv_manager",
+        "alisa": "adv_manager",
+        "valueType": "NUMBER",
+        "defaultValue": 0
+    },
+    "user_agent": {
+        "name": "user_agent",
+        "alisa": "user_agent",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "screen_height": {
+        "name": "screen_height",
+        "alisa": "screen_height",
+        "valueType": "NUMBER",
+        "defaultValue": 0
+    },
+    "datasource": {
+        "name": "datasource",
+        "alisa": "datasource",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "request_url": {
+        "name": "request_url",
+        "alisa": "request_url",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "source": {
+        "name": "source",
+        "alisa": "source",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "matched_format": {
+        "name": "matched_format",
+        "alisa": "matched_format",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "status": {
+        "name": "status",
+        "alisa": "status",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "conversion2": {
+        "name": "conversion2",
+        "alisa": "conversion2",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "message": {
+        "name": "message",
+        "alisa": "message",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "year": {
+        "name": "year",
+        "alisa": "year",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "month": {
+        "name": "month",
+        "alisa": "month",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "week": {
+        "name": "week",
+        "alisa": "week",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "day": {
+        "name": "day",
+        "alisa": "day",
+        "valueType": "STRING",
+        "defaultValue": ""
+    },
+    "hour": {
+        "name": "hour",
+        "alisa": "hour",
+        "valueType": "STRING",
+        "defaultValue": ""
+    }
+}

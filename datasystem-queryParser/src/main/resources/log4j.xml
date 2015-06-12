@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/" debug="false">
+
+        <appender name="info-out" class="org.apache.log4j.rolling.RollingFileAppender">
+                <param name="File" value="/mnt/realquery/realquery.log"/>
+                <param name="append" value="true" />
+                <param name="encoding" value="UTF-8" />
+                <rollingPolicy class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
+                    <param name="FileNamePattern" value="/mnt/realquery/realquery.log.%d.gz"/>
+                </rollingPolicy>
+                <layout class="org.apache.log4j.PatternLayout">
+                        <param name="ConversionPattern" value="[%d][%p][%c:%L][%m]%n"/>
+                </layout>
+            <filter class="org.apache.log4j.varia.LevelRangeFilter">
+                <param name="levelMin" value="INFO" />
+                <param name="levelMax" value="INFO" />
+            </filter>
+        </appender>
+
+        <appender name="error-out" class="org.apache.log4j.rolling.RollingFileAppender">
+                <param name="File" value="/mnt/realquery/realquery.log.error"/>
+                <param name="append" value="true" />
+                <param name="encoding" value="UTF-8" />
+                <rollingPolicy class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
+                    <param name="FileNamePattern" value="/mnt/realquery/realquery.log.error.%d.gz"/>
+                </rollingPolicy>
+                <layout class="org.apache.log4j.PatternLayout">
+                        <param name="ConversionPattern" value="[%d][%p][%c:%L][%m]%n"/>
+                </layout>
+            <filter class="org.apache.log4j.varia.LevelRangeFilter">
+                <param name="levelMin" value="ERROR" />
+                <param name="levelMax" value="ERROR" />
+            </filter>
+        </appender>
+
+        <appender name="debug-out" class="org.apache.log4j.rolling.RollingFileAppender">
+                <param name="File" value="/mnt/realquery/realquery.log.debug"/>
+                <param name="append" value="true" />
+                <param name="encoding" value="UTF-8" />
+                <rollingPolicy class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
+                    <param name="FileNamePattern" value="/mnt/realquery/realquery.log.debug.%d.gz"/>
+                </rollingPolicy>
+                <layout class="org.apache.log4j.PatternLayout">
+                        <param name="ConversionPattern" value="[%d][%p][%c:%L][%m]%n"/>
+                </layout>
+            <filter class="org.apache.log4j.varia.LevelRangeFilter">
+                <param name="levelMin" value="DEBUG" />
+                <param name="levelMax" value="DEBUG" />
+            </filter>
+        </appender>
+
+        <appender name="warn-out" class="org.apache.log4j.rolling.RollingFileAppender">
+                <param name="File" value="/mnt/realquery/realquery.log.warn"/>
+                <param name="append" value="true" />
+                <param name="encoding" value="UTF-8" />
+                <rollingPolicy class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
+                    <param name="FileNamePattern" value="/mnt/realquery/realquery.log.warn.%d.gz"/>
+                </rollingPolicy>
+                <layout class="org.apache.log4j.PatternLayout">
+                        <param name="ConversionPattern" value="[%d][%p][%c:%L][%m]%n"/>
+                </layout>
+            <filter class="org.apache.log4j.varia.LevelRangeFilter">
+                <param name="levelMin" value="WARN" />
+                <param name="levelMax" value="WARN" />
+            </filter>
+        </appender>
+        
+
+        <root>
+                <level value="debug"/>
+                <appender-ref ref="info-out" />
+                <appender-ref ref="debug-out" />
+                <appender-ref ref="error-out" />
+                <appender-ref ref="warn-out" />
+        </root>
+</log4j:configuration>
+

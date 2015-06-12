@@ -1,0 +1,23 @@
+
+     [
+        
+          {		"dataSource":"ymds_druid_datasource",
+                "host": "10.1.5.30",
+                "port": "8080",
+                "ver": "v2",
+                "format": "pretty"
+            },
+           {	"dataSource":"ymds_druid_datasource",
+                "host": "localhost",
+                "port": "8080",
+                "ver": "v2",
+                "format": "pretty"
+            },
+              {	
+            	"dataSource":"ymds_druid_datasource",
+                "host": "localhost",
+                "port": "8082",
+                "ver": "v2",
+                "format": "pretty"
+            }
+    ]

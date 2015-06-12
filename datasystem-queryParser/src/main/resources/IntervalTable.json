@@ -1,0 +1,7 @@
+{
+  "month" : "MONTH",
+  "year" : "YEAR",
+  "day" : "DAY",
+  "hour" : "HOUR",
+  "week" : "WEEKOFMONTH"
+}

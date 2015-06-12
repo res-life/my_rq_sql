@@ -1,0 +1,93 @@
+{
+  "clicks" : {
+    "alisa" : "clicks",
+    "name" : "sum(click)",
+    "formula" : "(longsum(click) as clicks)",
+    "level" : 1,
+    "precision" : 0
+  },
+  "convs" : {
+    "alisa" : "convs",
+    "name" : "sum(conversion)",
+    "formula" : "(longsum(conversion) as convs)",
+    "level" : 1,
+    "precision" : 0
+  },
+  "lpclicks" : {
+    "alisa" : "lpclicks",
+    "name" : "sum(lp_click)",
+    "formula" : "(longsum(lp_click) as lpclicks)",
+    "level" : 1,
+    "precision" : 0
+  },
+  "cost" : {
+    "alisa" : "cost",
+    "name" : "cost",
+    "formula" : "(js(cost:cost_per_click,click:[a,b,\"a*b\"]:+:0))",
+    "level" : 1,
+    "precision" : 3
+  },
+  "income" : {
+    "alisa" : "income",
+    "name" : "income",
+    "formula" : "(js(income:payout,conversion:[a,b,\"a*b\"]:+:0))",
+    "level" : 1,
+    "precision" : 3
+  },
+  "cr" : {
+    "alisa" : "cr",
+    "name" : "(convs/clicks)",
+    "formula" : "(sum(conversion) / sum(click) as cr)",
+    "level" : 2,
+    "precision" : 4
+  },
+  "epc" : {
+    "alisa" : "epc",
+    "name" : "(income/clicks)",
+    "formula" : "(js(income:payout,conversion:[a,b,\"a*b\"]:+:0) / sum(click) as epc)",
+    "level" : 2,
+    "precision" : 3
+  },
+  "net" : {
+    "alisa" : "net",
+    "name" : "(income-cost)",
+    "formula" : "(js(income:payout,conversion:[a,b,\"a*b\"]:+:0) - js(cost:cost_per_click,click:[a,b,\"a*b\"]:+:0) as net)",
+    "level" : 2,
+    "precision" : 3
+  },
+  "roi" : {
+    "alisa" : "roi",
+    "name" : "((income-cost)/cost)",
+    "formula" : "(((js(income:payout,conversion:[a,b,\"a*b\"]:+:0) - js(cost:cost_per_click,click:[a,b,\"a*b\"]:+:0)) / js(cost:cost_per_click,click:[a,b,\"a*b\"]:+:0)) as roi)",
+    "level" : 2,
+    "precision" : 5
+  },
+  "outs" : {
+    "alisa" : "outs",
+    "name" : "sum(lp_click)",
+    "formula" : "(longsum(lp_click) as outs)",
+    "level" : 1,
+    "precision" : 0
+  },
+  "ctr" : {
+    "alisa" : "ctr",
+    "name" : "(outs/clicks)",
+    "formula" : "((longsum(lp_click) / longsum(click)) as ctr)",
+    "level" : 2,
+    "precision" : 4
+  },
+  "test" : {
+    "alisa" : "test",
+    "name" : "test",
+    "formula" : "(js(test:conversion,rpa:[a,b,\"a*b\"]:+:0))",
+    "level" : 1,
+    "precision" : 3
+  },
+  "rows" : {
+    "alisa" : "rows",
+    "name" : "sum(rows)",
+    "formula" : "(count(*) as rows)",
+    "level" : 1,
+    "precision" : 0
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "maxPageNumber" : 20,
+  "impalaCorePoolSize" : 1,
+  "impalaMaximumPoolSize" : 2,
+  "impalaAuthType" : "LDAP",
+  "druidSyncRequestCorePoolSize" : 3,
+  "druidSyncRequestMaxPoolSize" : 6,
+  "extractionDimensions" : {
+    "eve_druid_datasource_ds" : [ "click_time", "conversion_time" ],
+    "ymds_druid_datasource" : [ "click_time", "conv_time" ]
+  }
+}

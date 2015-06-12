@@ -1,0 +1,87 @@
+{
+    "timeFunction": {
+        "year": "cast(year(time_stamp) as string)",
+        "month": "(case when month(time_stamp)<10 then concat('0',cast(month(time_stamp) as string)) else cast(month(time_stamp) as string) end)",
+        "week": "concat(cast((case when month(time_stamp)<10 then concat('0',cast(month(time_stamp) as string)) else cast(month(time_stamp) as string) end) as string),'-',cast(floor(1 + ((dayofyear(time_stamp) - dayofyear(trunc(time_stamp,'MONTH'))) / 7  + ((dayofyear(time_stamp) - dayofyear(trunc(time_stamp,'MONTH'))) % 7 + (dayofweek(trunc(time_stamp,'MONTH')) - 1)) / 8)) as string))",
+        "day": "from_unixtime(unix_timestamp(time_stamp), 'yyyy-MM-dd')",
+        "hour": "hour(time_stamp)"
+    },
+    "datasources": {
+        "ymds_druid_datasource": {
+            "useDatabase": "ym_system",
+            "targetTable": "ym_impala",
+            "impala": {
+                "click": "(ifnull(sum(click),0))",
+                "conversion": "(ifnull(sum(conversion),0))",
+                "cr": "(ifnull(sum(conversion) / nullif(sum(click),0),0))",
+                "cost": "(ifnull(sum(cost),0))",
+                "revenue": "(ifnull(sum(revenue),0))",
+                "unique_click": "(ifnull(sum(unique_click),0))",
+                "cpc": "(ifnull(sum(cost) / nullif(sum(click),0),0))",
+                "rpc": "(ifnull(sum(revenue) / nullif(sum(click),0),0))",
+                "profit": "(ifnull((sum(revenue) - sum(cost)),0))",
+                "epc": "(ifnull(sum(cost) / nullif(sum(click),0),0))",
+                "arpa": "(ifnull(sum(revenue) / nullif(sum(conversion),0),0))",
+                "acpa": "(ifnull(sum(cost) / nullif(sum(conversion),0),0))"
+            }
+        },
+        "contrack_druid_datasource_ds": {
+            "useDatabase": "td_system",
+            "targetTable": "td_impala",
+            "impala": {
+                "clicks": "(ifnull(sum(click),0))",
+                "convs": "(ifnull(sum(conversion),0))",
+                "lpclicks": "(ifnull(sum(lp_click),0))",
+                "outs": "(ifnull(sum(lp_click),0))",
+                "ctr": "(ifnull(ifnull(sum(lp_click),0) / nullif(sum(click),0),0))",
+                "cost": "ifnull(sum(cost_per_click*click),0)",
+                "income": "ifnull(sum(payout*conversion),0)",
+                "net": "(ifnull(sum(payout*conversion),0)-ifnull(sum(cost_per_click*click),0))",
+                "epc": "(ifnull(ifnull(sum(payout*conversion),0)/nullif(sum(click),0),0))",
+                "cr": "(ifnull(sum(conversion)/nullif(sum(click),0),0))",
+                "roi": "(ifnull((ifnull(sum(payout*conversion),0)-ifnull(sum(cost_per_click*click),0))/nullif(sum(cost_per_click*click),0),0))"
+            }
+        },
+         "eve_druid_datasource_ds": {
+              "useDatabase": "td_system",
+              "targetTable": "new_td_impala",
+              "impala": {
+                 "clicks": "(ifnull(sum(click),0))",
+                 "convs": "(ifnull(sum(conversion),0))",
+                 "lpclicks": "(ifnull(sum(lp_click),0))",
+                 "outs": "(ifnull(sum(lp_click),0))",
+                 "ctr": "(ifnull(ifnull(sum(lp_click),0) / nullif(sum(click),0),0))",
+                 "cost": "ifnull(sum(cost_per_click*click),0)",
+                 "income": "ifnull(sum(payout*conversion),0)",
+                 "net": "(ifnull(sum(payout*conversion),0)-ifnull(sum(cost_per_click*click),0))",
+                 "epc": "(ifnull(ifnull(sum(payout*conversion),0)/nullif(sum(click),0),0))",
+                 "cr": "(ifnull(sum(conversion)/nullif(sum(click),0),0))",
+                 "roi": "(ifnull((ifnull(sum(payout*conversion),0)-ifnull(sum(cost_per_click*click),0))/nullif(sum(cost_per_click*click),0),0))"
+             }
+         },
+        "ndpsearch": {
+            "useDatabase": "ndpsearch_system",
+            "targetTable": "search_impala",
+            "impala": {
+                "requests": "(ifnull(sum(requests),0))",
+                "searches": "(ifnull(sum(searches),0))",
+                "organicimps": "(ifnull(sum(organicimps),0))",
+                "adimps": "(ifnull(sum(adimps),0))",
+                "grossimps": "(ifnull(sum(grossimps),0))",
+                "organicclicks": "ifnull(sum(organicclicks),0)",
+                "adclicks": "ifnull(sum(adclicks),0)",
+                "revenues": "(ifnull(sum(revenue),0))",
+                "revenueshare": "(ifnull(sum(revshare),0))",
+                "organicfillrate": "(ifnull(sum(organicimps)/sum(requests),0))",
+                "adfillrate": "(ifnull(sum(adimps)/sum(requests),0))",
+                "grossfillrate": "(ifnull(sum(grossimps)/sum(requests),0))",
+                "organicctr": "(ifnull(sum(organicclicks)/sum(searches),0))",
+                "trueorganicctr": "(ifnull(sum(organicclicks)/sum(requests),0))",
+                "adctr": "(ifnull(sum(adclicks)/sum(searches),0))",
+                "trueadctr": "(ifnull(sum(adclicks)/sum(requests),0))",
+                "epc": "(ifnull(sum(revenue)/sum(adclicks),0))",
+                "rpm": "(ifnull(sum(revenue)/sum(requests)*1000,0))"
+            }
+        }
+    }
+}
